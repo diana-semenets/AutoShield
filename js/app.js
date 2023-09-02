@@ -3523,28 +3523,21 @@
             },
             on: {}
         });
-        if (document.querySelector(".works__slider")) new core(".reviews__slider", {
-            modules: [ Navigation, Pagination, EffectCoverflow ],
+        if (document.querySelector(".reviews__slider")) new core(".reviews__slider", {
+            modules: [ Navigation, EffectCoverflow ],
+            observer: true,
             grabCursor: true,
             centeredSlides: true,
             slidesPerView: 2.3,
             loop: true,
-            spaceBetween: 80,
+            spaceBetween: 70,
             effect: "coverflow",
             coverflowEffect: {
                 rotate: 0,
-                depth: 200,
+                depth: 250,
                 slideShadows: false
             },
-            speed: 400,
-            autoplay: {
-                delay: 1e3,
-                disableOnInteraction: false
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true
-            },
+            speed: 600,
             navigation: {
                 prevEl: ".swiper-button-prev",
                 nextEl: ".swiper-button-next"
@@ -3576,6 +3569,17 @@
             menu.classList.remove("active");
             menuBtn.classList.remove("active");
             document.body.style.overflow = "";
+        }
+    }));
+    let stickyNav = document.querySelector(".header");
+    let mainContent = document.querySelector(".page");
+    document.addEventListener("scroll", (() => {
+        if (window.scrollY > 0) {
+            stickyNav.classList.add("sticky");
+            mainContent.style.padding = `${stickyNav.offsetHeight}px 0 0 0`;
+        } else {
+            stickyNav.classList.remove("sticky");
+            mainContent.style.padding = `0 0 0 0`;
         }
     }));
     window["FLS"] = true;
