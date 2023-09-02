@@ -102,12 +102,6 @@ h6 {
   font-size: inherit;
 }
 
-.lock body {
-  overflow: hidden;
-  -ms-touch-action: none;
-      touch-action: none;
-}
-
 .wrapper {
   min-height: 100%;
   display: -webkit-box;
@@ -2904,6 +2898,94 @@ button.swiper-pagination-bullet {
   }
 }
 
+@media (max-width: 769px) {
+  .title {
+    width: 155px;
+  }
+
+  .services__content-item .more {
+    padding: 14px 15px;
+    font-size: 14px;
+  }
+
+  .why__title {
+    width: 235px;
+    font-size: 30px;
+  }
+
+  .why__about p,
+  .why__info-item p {
+    font-size: 18px;
+  }
+
+  .why__about-btn {
+    max-width: 170px;
+    font-size: 14px;
+    padding: 0 15px;
+  }
+
+  .works__more {
+    font-size: 14px;
+  }
+
+  .price__img {
+    height: 400px;
+    background-size: 100%;
+  }
+
+  .mirrow-name {
+    width: 100px;
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .trunk {
+    right: 5%;
+  }
+
+  .doors {
+    right: 8%;
+  }
+
+  .bumper {
+    bottom: 33%;
+    left: 6%;
+  }
+
+  .roof {
+    right: 11%;
+  }
+
+  .contacts__form {
+    max-width: 350px;
+  }
+
+  .contacts__title,
+  .contacts__titles {
+    font-size: 30px;
+  }
+
+  .map__discont {
+    padding: 50px 20px;
+  }
+
+  .map__discont-subtitle {
+    font-size: 20px;
+  }
+
+  .map__discont-title {
+    font-size: 30px;
+  }
+
+  .map__discont-content {
+    max-width: 400px;
+  }
+
+  .map__discont-text {
+    font-size: 20px;
+  }
+}
+
 @media (max-width: 500px) {
   .footer__content {
     padding-left: 30px;
@@ -3355,92 +3437,6 @@ button.swiper-pagination-bullet {
 
   .footer__social {
     margin-top: 0;
-  }
-
-  .title {
-    width: 155px;
-  }
-
-  .services__content-item .more {
-    padding: 14px 15px;
-    font-size: 14px;
-  }
-
-  .why__title {
-    width: 235px;
-    font-size: 30px;
-  }
-
-  .why__about p,
-  .why__info-item p {
-    font-size: 18px;
-  }
-
-  .why__about-btn {
-    max-width: 170px;
-    font-size: 14px;
-    padding: 0 15px;
-  }
-
-  .works__more {
-    font-size: 14px;
-  }
-
-  .price__img {
-    height: 400px;
-    background-size: 100%;
-  }
-
-  .mirrow-name {
-    width: 100px;
-    font-size: 12px;
-    font-weight: 400;
-  }
-
-  .trunk {
-    right: 5%;
-  }
-
-  .doors {
-    right: 8%;
-  }
-
-  .bumper {
-    bottom: 33%;
-    left: 6%;
-  }
-
-  .roof {
-    right: 11%;
-  }
-
-  .contacts__form {
-    max-width: 350px;
-  }
-
-  .contacts__title,
-  .contacts__titles {
-    font-size: 30px;
-  }
-
-  .map__discont {
-    padding: 50px 20px;
-  }
-
-  .map__discont-subtitle {
-    font-size: 20px;
-  }
-
-  .map__discont-title {
-    font-size: 30px;
-  }
-
-  .map__discont-content {
-    max-width: 400px;
-  }
-
-  .map__discont-text {
-    font-size: 20px;
   }
 }
 
