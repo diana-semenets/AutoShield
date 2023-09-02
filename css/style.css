@@ -633,7 +633,6 @@ h6 {
 .bg__slide {
   padding-top: 121px;
   background-size: cover;
-  height: 700px;
 }
 
 .bg__slide-content {
@@ -662,6 +661,10 @@ h6 {
 
 .bg__slide-btn:hover {
   background-color: rgba(217, 217, 217, 0.2);
+}
+
+.swiper {
+  height: 800px;
 }
 
 .second-slide {
@@ -695,7 +698,7 @@ h6 {
 
 .bg__slide-img.three-slide {
   width: 100%;
-  max-height: 750px;
+  max-height: 800px;
   max-width: 800px;
   padding-top: 0;
 }
@@ -752,7 +755,7 @@ h6 {
 }
 
 .content-five {
-  height: 700px;
+  height: 800px;
   max-width: 637px;
   padding-top: 190px;
   padding-left: 50px;
@@ -872,6 +875,36 @@ h6 {
   font-family: Jura;
   font-size: 40px;
   font-weight: 700;
+}
+
+.swiper-button-prev::after,
+.swiper-rtl .swiper-button-next::after {
+  content: "prev";
+  color: #fff;
+}
+
+.swiper-button-next::after,
+.swiper-rtl .bg-pagination.swiper-button-prev::after {
+  content: "next";
+  color: #fff;
+}
+
+.swiper-button-next::after,
+.swiper-rtl .works-pagination.swiper-button-prev::after {
+  content: "next";
+  color: rgb(171, 171, 171);
+}
+
+.swiper-button-prev::after,
+.swiper-rtl .works-pagination.swiper-button-next {
+  content: "next";
+  color: rgb(171, 171, 171);
+}
+
+.swiper-button-prev,
+.swiper-rtl .reviews__button-prev {
+  position: absolute;
+  bottom: 0;
 }
 
 .services__title {
@@ -1375,6 +1408,7 @@ h6 {
   width: 100%;
   padding: 58px 0 111px;
   color: #fff;
+  position: relative;
 }
 
 .reviews__title {
@@ -1384,11 +1418,25 @@ h6 {
   margin-left: 150px;
 }
 
+.works__slider {
+  height: 600px;
+}
+
+.reviews__slider {
+  height: 400px;
+}
+
 .reviews__slide {
   max-width: 658px;
   max-height: 339px;
-  height: 100%;
+  height: 339px;
   padding: 30px 30px 54px 50px;
+  background-color: #333232;
+  display: -ms-grid;
+  display: grid;
+}
+
+.reviews__slide.swiper-slide-active {
   background-color: #393939;
 }
 
@@ -1399,6 +1447,7 @@ h6 {
 }
 
 .reviews__slide-text {
+  height: 120px;
   margin-bottom: 36px;
   font-size: 20px;
   font-weight: 400;
