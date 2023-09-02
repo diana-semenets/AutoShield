@@ -102,6 +102,10 @@ h6 {
   font-size: inherit;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .wrapper {
   min-height: 100%;
   display: -webkit-box;
