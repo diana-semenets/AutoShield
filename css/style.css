@@ -2088,6 +2088,12 @@ html {
   .service-page__inner {
     padding: 0 10px;
   }
+  .bg__slide-five {
+    margin-right: -30px;
+  }
+  .content-five {
+    max-width: 500px;
+  }
   
 }
 
@@ -2538,6 +2544,11 @@ html {
   .bg__slide-inner {
     flex-wrap: wrap-reverse;
   }
+  .img-first {
+    max-width: 334px;
+    margin-left: 200px;
+  }
+ 
   .bg-button-prev, .bg-button-next {
     display: none;
   }
@@ -2558,7 +2569,8 @@ html {
     flex-wrap: wrap-reverse;
   }
   .second-slide__btn {
-    margin-top: 146px;
+    margin-top: 80px;
+    margin-bottom: 50px;
   }
   .three-slide {
     margin-left: 0;
@@ -2585,17 +2597,18 @@ html {
     max-height: 400px;
   }
   .bg__slider {
-    height: 700px;
+    height: 600px;
   }
   .title-second {
-    margin-top: 100px;
-    margin-bottom:82px;
+    margin-top: 50px;
+    margin-bottom:42px;
   }
   .bg__slide-inner .inner-three {
     height: 700px;
   }
   .three-slide__btn {
-    margin-top: 180px;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
   .slide-box__four {
     flex-wrap: wrap;
@@ -2609,6 +2622,20 @@ html {
   .service-page__title {
     font-size: 30px;
     margin: 50px auto 30px;
+  }
+  .bg__slide-four {
+    height: 600px;
+  }
+  .content-five {
+    padding-top: 20px;
+    padding-left: 20px;
+    margin-top: 200px;
+  }
+  .bg__slide.swiper-slide .five {
+    padding-right: 0;
+  }
+  .bg__slide.five {
+    padding-left: 0;
   }
   .no-webp .map__discont{
     background-image: url("../img/map1-mobile.png"); }
