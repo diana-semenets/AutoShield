@@ -1120,7 +1120,9 @@ html {
   max-width: 270px;
   border-bottom: 4px solid #BA001A;
 }
-
+.work-arrow, .blog-arrow {
+  font-size: 12px;
+}
 .works__slide-inner {
   max-width: 1084px;
   margin: 0 auto;
