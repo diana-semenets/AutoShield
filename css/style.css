@@ -620,7 +620,12 @@ html {
 .swiper {
   height: 800px;
 }
-
+.bg-pagination span.swiper-pagination-bullet-active {
+  background-color: #fff;
+}
+.bg-pagination {
+  margin-top: -20px;
+}
 .second-slide {
   max-width: 788px;
 }
@@ -1957,6 +1962,13 @@ html {
   top: 80%;
   right: 100px;
 }
+.error__box img {
+  width: 100%;
+}
+.error__box {
+  padding-left: 10px;
+  padding-right: 10px;
+}
 
 @media (max-width: 998px) {
   .menu,
@@ -2055,6 +2067,28 @@ html {
     padding-left: 10px;
     padding-right: 10px;
   }
+  .bg__slide {  
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 64px;
+  }
+  .bg__slide-inner {
+    gap: 15px;
+  }
+  .three-slide {
+    margin-left: -100px;
+  }
+  .content-three {
+    max-width: 450px;
+  }
+  .slide-box__four img{
+    max-width: 700px;
+    width: 100%;
+  }
+  .service-page__inner {
+    padding: 0 10px;
+  }
+  
 }
 
 @media (max-width: 769px) {
@@ -2177,16 +2211,64 @@ html {
     top: 260px;
     right: 45%;
   }
+  .bg__slide-title {
+    font-size: 32px;
+  }
+  .bg__slide-text {
+    font-size: 18px;
+  }
+  .bg__slide-btn {
+    padding: 10px 24px;
+    margin-top: 68px;
+    font-size: 10px;
+  }
+  .bg__benefits-items {
+    display: none;
+  }
+  .bg__slide-content.content-three {
+    max-width: 330px;
+    
+    margin-left: 10px;
+    padding-right: 50px;
+  }
+  .bg__slide-img.three-slide {  
+    max-width: 350px;
+    max-height: 350px;
+  }
+  .bg__slide-title.title-three  {
+    margin-top: -120px;
+  }
+  .tab__title {
+    height: 52px;
+    padding-right: 7px;
+    padding-left: 10px;
+    font-size: 18px;
+  }
+  .service-page__box {
+    -ms-grid-columns: 30% auto;
+    grid-template-columns: 30% auto;
+  }
+  .service-page__body h3 {
+    font-size: 28px;
+  }
+  .service-page__text {
+    font-size: 16px;
+  }
+  .service-page__body {
+    padding: 30px 20px;
+  }
+  .service-page__subtitle {
+    width: 100%;
+    font-size: 28px;
+  }
 
 }
 
-@media (max-width: 500px) {
-  
+@media (max-width: 500px) {  
   .services__content {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
-
   .services__content-item {
     max-width: 500px;
   }
@@ -2194,7 +2276,6 @@ html {
   .services__content-item img {
     display: none;
   }
-
   .services__content-item a {
     position: relative;
     width: 100%;
@@ -2202,11 +2283,9 @@ html {
     top: 0;
     left: 0;
   }
-
   .services__items {
     grid-template-columns: repeat(2, 1fr);
   }
-
   .why__content {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -2443,8 +2522,85 @@ html {
     font-size: 25px;
     font-weight: 700;
   }
-
-
+  .bg__slide {
+    background-size: cover; 
+    background-repeat: no-repeat;
+  }
+  .bg__slide-inner {
+    flex-wrap: wrap-reverse;
+  }
+  .bg-button-prev, .bg-button-next {
+    display: none;
+  }
+  .bg__slide-img img {
+    width: inherit;
+    padding-left: 120px;
+  }
+  .bg__slide { 
+    padding-top: 30px;   
+  }
+  .bg__slide-btn {
+    width: 100%;
+    font-size: 18px;
+    padding: 18px 10px;
+    margin-top: 29px;
+  }
+  .inner-three {
+    flex-wrap: wrap-reverse;
+  }
+  .second-slide__btn {
+    margin-top: 146px;
+  }
+  .three-slide {
+    margin-left: 0;
+  }
+  .bg__slide-three  {
+    margin-top:0;
+  }
+  .bg__slide-img img {
+    padding-left: 0;
+  }
+   .bg__slide-content.content-three {
+    max-width: none;
+  }
+  .bg__slide-title.title-three {
+    max-width: 380px;
+    margin-bottom: 80px;
+  }
+  .bg__slide-title.title-three {
+    margin-top: -300px;
+    position: relative;
+    margin-bottom: 50px;
+  }
+  .bg__slide-img.three-slide {  
+    max-height: 400px;
+  }
+  .swiper {
+    height: 700px;
+  }
+  .title-second {
+    margin-top: 100px;
+    margin-bottom:82px;
+  }
+  .bg__slide-inner .inner-three {
+    height: 700px;
+  }
+  .three-slide__btn {
+    margin-top: 180px;
+  }
+  .slide-box__four {
+    flex-wrap: wrap;
+  }
+  .error-text {
+    max-width: 257px;
+  }
+  .service-page__box {
+    display: block;
+  }
+  .service-page__title {
+    font-size: 30px;
+    margin: 50px auto 30px;
+  }
   .no-webp .map__discont{
     background-image: url("../img/map1-mobile.png"); }
 }
