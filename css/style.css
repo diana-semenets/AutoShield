@@ -437,7 +437,9 @@ html {
 .serv:hover .menu__item-subitem {
   display: block;
 }
-
+.contacts-block {
+  display: none;
+}
 .footer {
   background-color: #1E1E1E;
 }
@@ -526,6 +528,7 @@ html {
   -webkit-transition: background-color ease-in-out 0.2s;
   -o-transition: background-color ease-in-out 0.2s;
   transition: background-color ease-in-out 0.2s;
+  display: block;
 }
 
 .footer__btn:hover {
@@ -616,6 +619,7 @@ html {
 .bg__slide-btn:hover {
   background-color: rgba(217, 217, 217, 0.2);
 }
+
 
 .swiper {
   height: 800px;
@@ -782,6 +786,9 @@ html {
 .bg__benefits {
   background: rgba(30, 30, 30, 0.28);
   padding: 26px 10px;
+}
+.mobil__benefits {
+  display: none;
 }
 
 .item-benefits {
@@ -2094,6 +2101,9 @@ html {
   .content-five {
     max-width: 500px;
   }
+  .bg__benefits {
+    margin: 30px -30px 0 -30px;
+  }
   
 }
 
@@ -2237,12 +2247,14 @@ html {
     margin-top: 68px;
     font-size: 10px;
   }
-  .bg__benefits-items {
-    display: none;
+  .item-benefits-item p {
+    font-size: 18px;    
+  }
+  .bg__slider {
+    height: 600px;
   }
   .bg__slide-content.content-three {
-    max-width: 330px;
-    
+    max-width: 330px;    
     margin-left: 10px;
     padding-right: 50px;
   }
@@ -2275,6 +2287,19 @@ html {
   .service-page__subtitle {
     width: 100%;
     font-size: 28px;
+  }
+  .contacts-block {
+    background-color: #1E1E1E;
+    color: #fff;
+  }
+  .header__contact {
+    display: none;
+  }
+  .header__box {
+    background-color: #1E1E1E;
+  }
+  .header__logo {
+    margin: auto;
   }
 
 }
@@ -2464,8 +2489,7 @@ html {
   .map__discont-content {
     max-width: 270px;
   }
-  .reviews__box {
-    
+  .reviews__box {    
     margin-left: 15px;
     margin-right: 25px;
   }
@@ -2536,6 +2560,9 @@ html {
     font-family: "Jura";
     font-size: 25px;
     font-weight: 700;
+  }
+  .bg__benefits {
+    display: none;
   }
   .bg__slide {
     background-size: cover; 
@@ -2613,8 +2640,15 @@ html {
   .slide-box__four {
     flex-wrap: wrap;
   }
+  .four-content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   .error-text {
     max-width: 257px;
+  }
+  .services__container {
+    padding-bottom: 84px;
   }
   .service-page__box {
     display: block;
@@ -2631,14 +2665,79 @@ html {
     padding-left: 20px;
     margin-top: 200px;
   }
-  .bg__slide.swiper-slide .five {
+  .bg__slide .seven__slide  {
     padding-right: 0;
   }
   .bg__slide.five {
     padding-left: 0;
   }
-  .no-webp .map__discont{
-    background-image: url("../img/map1-mobile.png"); }
+  .six-img {
+    padding-top: 0;
+    margin: 0 auto;
+  }
+  .six-img-img {
+    width: 300px;
+    height: 138px;  
+  }
+  .six-content {
+    margin-top: 0;
+  }
+  .bg__slide-seven {
+    height: 600px;
+  }
+  .img-seven {
+    height: 193px; 
+    max-width: 500px;
+    overflow: hidden;
+  }
+  .img-seven img {
+    height: 100%;
+    margin-left: -50px;  
+  }
+  .seven__slide {
+    margin-top: -30px;    
+  }
+  .bg__slide.seven__slide {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .item-benefits {
+    padding: 45px 29px 60px 39px;
+    background-color: #1E1E1E;
+    display: block;
+    color: #fff;
+  }
+  .item-benefits-item {
+    margin: 15px 0;
+  }
+  .item-benefits-item p {
+    max-width: 241px;
+  }
+  p.item-benefits-text {
+    max-width: 190px;
+    margin-top: 4px;
+    font-size: 14px;
+  }
+  .item-benefits-linesup {
+    background-image: url('../img/linesup.png');
+    height: 53px;
+    background-repeat: no-repeat;
+    background-position-x: 80px;
+  }
+  .item-benefits-lines {
+    background-image: url('../img/lines-benefits.png');
+    height: 53px;
+    background-repeat: no-repeat;
+    background-position-x: 80px;
+  }
+  .why__about-btn {
+    display: none;
+  }
+  .mobil__benefits {
+    display: block;
+  }
+  
 }
 
 @media (max-width: 450px) {
@@ -2663,12 +2762,14 @@ html {
   .price__img {
     height: 340px;
   }
+  
 }
 
 @media (max-width: 350px) {
   .price__img {
     height: 300px;
   }
+  
 }
 
 @media (max-width: 320px) {
@@ -2697,12 +2798,14 @@ html {
   .header__contacts {
     position: absolute;
     right: 52px;
+    opacity: 1;
   }
 
   .header-burger {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    position: absolute;
   }
 
   .item-menu__logo {
@@ -2736,7 +2839,7 @@ html {
     position: relative;
     z-index: 10;
     overflow: hidden;
-    right: 10px;
+    left: 10px;
   }
 
   .menu-btn span {
@@ -2781,14 +2884,17 @@ html {
     -o-transition: transform 0.5s;
     transition: transform 0.5s;
     transition: transform 0.5s, -webkit-transform 0.5s;
+    opacity: 1;
   }
 
   .menu.active {
     width: 300px;
+    height: 500px;
     -webkit-transform: translateX(0%);
     -ms-transform: translateX(0%);
     transform: translateX(0%);
     z-index: 5;
+    opacity: 1;
   }
 
   .menu li {
@@ -2803,6 +2909,7 @@ html {
 
   .menu-btn.active span:nth-of-type(2) {
     top: 50%;
+    background-color: #1E1E1E;
     -webkit-transform: translate(-50%, 0%) rotate(45deg);
     -ms-transform: translate(-50%, 0%) rotate(45deg);
     transform: translate(-50%, 0%) rotate(45deg);
@@ -2810,13 +2917,25 @@ html {
 
   .menu-btn.active span:nth-of-type(3) {
     top: 50%;
+    background-color: #1E1E1E;
     -webkit-transform: translate(-50%, 0%) rotate(-45deg);
     -ms-transform: translate(-50%, 0%) rotate(-45deg);
     transform: translate(-50%, 0%) rotate(-45deg);
   }
-
+  .menu-btn.active {
+    margin-left: 200px;
+  }
   .menu__list {
     display: block;
+  }
+  .menu__item-subitem ul{
+    background-color: #fff;
+    margin-left: 80px;
+  }
+  .menu .menu__item-subitem ul li{
+    list-style-type: none;
+    padding: 5px 0 5px 10px;
+    border-bottom: 1px solid #DCDCDC;
   }
 
   .contacts-messanger,
@@ -2845,6 +2964,17 @@ html {
   .footer__social {
     margin-top: 0;
   }
+  .header__contact-map, .header__contact-time {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .header__contact-time {
+    margin: 21px 0;
+  }
+  .header__contact-tel {
+    font-size: 22px;
+    font-weight: 500;
+  }
 }
 
 .webp .price__img{ background-image: url(../img/price.webp); }
@@ -2860,6 +2990,6 @@ html {
 
   .webp .map__discont{ 
     background-image: url(../img/map1-mobile.webp);
-    background-size: 100%;
+    background-size: cover;
     height: 500px; }
 }
