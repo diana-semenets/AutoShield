@@ -2,10 +2,9 @@
 <html lang="uk">
 
 <head>
-	<title>Главная</title>
+	<title>AutoShield | Головна</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<!-- <style>body{opacity: 0;}</style> -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="shortcut icon" href="favicon.ico">
@@ -56,8 +55,12 @@
 							</li>
 							<li class="menu__item"><a href="index.html#blog" class="menu__link">Новини</a></li>
 							<li class="menu__item"><a href="index.html#contacts" class="menu__link">Контакти</a></li>
-							<!--<li class="menu__item"><a href="#" class="menu__link">Відгуки</a></li>-->
 							<li class="menu__item"><a href="index.html#reviews" class="menu__link">Відгуки</a></li>
+							<li class="contacts-block">								
+								<p class="header__contact-map"><span class="icon-map"></span> Б.Церква, Вул. Київська, 90</p>								
+								<p class="header__contact-time"><span class="icon-time"></span> Пн.-Пт. з 8:00 до 18:00</p>	
+								<p class="header__contact-tel"><a href="tel:+380987769326"><span class="icon-phone"></span> +38(098) 776 93 26</a></p>							
+							</li>
 						</ul>
 					</nav>
 					<button class="header__btn btn"><span class="icon-phone2"> </span> Зателефонувати</button>
@@ -68,20 +71,20 @@
 			<div class="page__inner">
 
 				<section class="bg">
-					<div class="bg__box">
+					<div class="bg__box ">
 						<!-- Оболочка слайдера -->
 						<div class="bg__slider swiper">
 							<!-- Двигающееся часть слайдера -->
 							<div class="bg__wrapper swiper-wrapper">
 								<!-- Слайд -->
-								<div class="bg__slide swiper-slide" style="background-image: url(img/back.png);">
+								<div class="bg__slide swiper-slide benefits_position" style="background-image: url(img/back.png);">
 									<div class="bg__slide-inner">
 										<div class="bg__slide-content">
 											<h1 class="bg__slide-title">Ваше авто заслуговує на краще</h1>
 											<p class="bg__slide-text">професійні малярні та кузовні роботи в м. Біла Церква.</p>
 											<button class="bg__slide-btn btn" type="button">Відправити заявку</button>
 										</div>
-										<div class="bg__slide-img"><picture><source srcset="img/main-slider/main-slide1.webp" type="image/webp"><img src="img/main-slider/main-slide1.webp" alt="машина"></picture></div>
+										<div class="bg__slide-img "><img class="img-first" src="img/main-slider/main-slide1.webp" alt="машина"></div>
 									</div>
 									<div class="bg__benefits">
 										<div class="bg__benefits-items item-benefits">
@@ -123,10 +126,10 @@
 									</div>
 								</div>
 
-								<div class="bg__slide swiper-slide" style="background-image: url(img/back4.png);">
+								<div class="bg__slide-four swiper-slide " style="background-image: url(img/back4.png);">
 									<div class="bg__slide-box slide-box__four">
 										<picture><source srcset="img/main-slide4.webp" type="image/webp"><img src="img/main-slide4.png" alt=""></picture>
-										<div class="bg__slide-content">
+										<div class="bg__slide-content four-content">
 											<h2 class="bg__slide-title ">Майстерність у відновленні кузова</h2>
 											<p class="bg__slide-text">професійні стапельні роботи, що роблять дива
 											</p>
@@ -154,11 +157,11 @@
 										</div>
 										<div class="bg__slide-img six-img">
 											<div class="six-img-text">
-												<picture><source srcset="img/main-car1-1.webp" type="image/webp"><img src="img/main-car1-1.png" alt="машина"></picture>
+												<img class="six-img-img" src="img/main-car1-1.webp" alt="машина">
 												<p>до</p>
 											</div>
 											<div class="six-img-text">
-												<picture><source srcset="img/main-car1-2.webp" type="image/webp"><img src="img/main-car1-2.png" alt="машина"></picture>
+												<picture><source srcset="img/main-car1-2.webp" type="image/webp"><img class="six-img-img" src="img/main-car1-2.png" alt="машина"></picture>
 												<p>ПІСЛЯ</p>
 											</div>
 										</div>
@@ -168,7 +171,7 @@
 								<div class="bg__slide swiper-slide seven__slide" style="background-color: #1e1e1e;">
 									<div class="bg__slide-seven">
 										<div class="bg__slide-img img-seven">
-											<picture><source srcset="img/main-seven.webp" type="image/webp"><img src="img/main-seven.png" alt="машина"></picture>
+											<img src="img/main-seven.webp" alt="машина">
 										</div>
 										<div class="bg__slide-content seven-content">
 											<h1 class="bg__slide-title">Фарбування за 2 дні коброю.
@@ -191,6 +194,40 @@
 						</div>
 					</div>
 				</section>
+
+				<section>
+					<div class="mobil__benefits">
+						<div class="mobil__benefits-items item-benefits">
+							<div class="item-benefits-item">
+								<picture><source srcset="img/benefits_time.webp" type="image/webp"><img src="img/benefits_time.png" alt="годинник"></picture>
+								<div class="item-benefits__wrapper">
+									<p>Виконання в термін</p>
+									<p class="item-benefits-text">розраховуйте та довіряйте ваш час нам</p>
+								</div>
+								
+							</div>
+							<div class="item-benefits-linesup"></div>
+							<div class="item-benefits-item">
+								<picture><source srcset="img/benefits_like.webp" type="image/webp"><img src="img/benefits_like.png" alt="Гарантія"></picture>
+								<div class="item-benefits__wrapper">
+									<p>Гарантія на всі види роботи</p>
+									<p class="item-benefits-text">завжди ручаємось за те, що виконуємо</p>
+								</div>
+							</div>
+							<div class="item-benefits-lines"></div>
+							<div class="item-benefits-item">
+								<picture><source srcset="img/benefits_flag.webp" type="image/webp"><img src="img/benefits_flag.png" alt="якісно"></picture>
+								<div class="item-benefits__wrapper">
+									<p>Швидко та якісно</p>
+									<p class="item-benefits-text">наші спеціалісти відповідають за терміни, та якість </p>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</section>
+
+				
 
 				<section class="services" id="services">
 					<div class="services__container">
@@ -575,7 +612,7 @@
 							<li class="footer__contacts-time"><span class="icon-time"> </span> Пн.-Пт. з 8:00 до 18:00</li>
 							<li class="footer__contacts-map"><span class="icon-map"> </span> Б.Церква, Вул. Київська, 90</li>
 						</ul>
-						<button class="footer__btn btn"><span class="icon-phone2"> </span> Зателефонувати</button>
+						<a href="tel:+6494461709" class="footer__btn btn"><span class="icon-phone2"> </span> Зателефонувати</a>
 					</div>
 					<div class="footer__social">
 						<h3 class="footer__social-title">Ми у соц. мережах</h3>
