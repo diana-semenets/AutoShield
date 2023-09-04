@@ -684,7 +684,10 @@ html {
   padding-top: 25px;
   transition: all ease-in-out 0.3s;
 }
-
+.img-back {
+  margin-top: -170px;
+ 
+}
 .bg__slide-img img {
   width: 100%;
   transition: all ease-in-out 0.3s;
@@ -727,7 +730,23 @@ html {
 .bg__slide-img:hover .img-first:nth-child(1) {
   display: none;
 }
-
+.bg__slide-img:hover .img-back {
+  display: none;
+}
+.img-first:nth-child(1) {
+  transform: translateY(-300px);
+  animation: animationMain 2s forwards;
+}
+@keyframes animationMain { /* объявляем имя анимации: "go-left-right" */
+  from {
+    transform: translateY(-300px);
+    opacity: 0;
+  } /* от: left: 0px */
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  } /* до: left: 100%-50px */
+}
 .content-five {
   height: 800px;
   max-width: 637px;
