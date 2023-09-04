@@ -1978,6 +1978,16 @@ html {
   padding-left: 10px;
   padding-right: 10px;
 }
+.gallery-slider {
+  margin-bottom: 153px;
+}
+
+.gallery-button-prev::after {
+  color: #950015;
+}
+.gallery-button-next::after {
+  color: #950015;
+}
 
 
 
@@ -2113,6 +2123,20 @@ html {
   }
   .blog-page__card {
     height: inherit;
+  }
+  .gallery-title {
+    margin-left: 10px;
+  }
+  .gallery-content {
+    min-height: 450px;
+    
+  }
+  .gallery-content img {
+    height: 100%;
+    width: inherit;
+    margin-left: -50px;
+    border-radius: 10px;
+    overflow: hidden;
   }
   
 }
@@ -2363,6 +2387,13 @@ html {
   .item-content {
     padding: 10px 30px 30px;
     font-size: 16px;
+  }
+  .gallery-slider {
+    margin-bottom: 50px;
+  }
+  .gallery-title {
+    width: 250px;
+    font-size: 30px;
   }
 }
 
