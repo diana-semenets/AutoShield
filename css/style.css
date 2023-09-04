@@ -2793,7 +2793,15 @@ html {
   .content-card {
     padding-left: 5px;
   }
-  
+  .blog-page__sidebar {
+    margin-top:  50px;
+  }
+  .blog-page__tag {
+    padding: 0 5px 10px;
+  }
+  .blog-page__box {
+    gap: 10px;
+  }
 }
 
 @media (max-width: 450px) {
