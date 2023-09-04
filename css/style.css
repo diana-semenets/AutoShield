@@ -2351,7 +2351,19 @@ html {
     font-size: 18px;
     font-weight: 500;
   }
-
+  .item-box {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .item__title {
+    margin: 35px 10px 0;
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .item-content {
+    padding: 10px 30px 30px;
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 500px) {  
@@ -2801,6 +2813,9 @@ html {
   }
   .blog-page__box {
     gap: 10px;
+  }
+  .item__title {
+    font-size: 24px;
   }
 }
 
