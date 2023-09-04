@@ -75,6 +75,7 @@ const swiperMain = new Swiper('.bg__slider', {
     loop: true,
     speed: 500,
     spaceBetween: 30,
+    effect: "fade",
    
     navigation: {
         nextEl: '.swiper-button-next',
@@ -102,7 +103,7 @@ const swiperMain = new Swiper('.bg__slider', {
        
     },
 
-    //autoplay: { delay: 5000 }
+    autoplay: { delay: 3000 },
 });
 
 
