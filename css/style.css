@@ -411,32 +411,62 @@ html {
   background: rgba(217, 217, 217, 0.2);
 }
 
-.menu__item-subitem {
-  width: 300px;
+.menu__item-subitem { 
   margin-top: -50px;
   padding-top: 0;
   display: none;
   position: absolute;
   top: 70px;
-  z-index: 10;
+  z-index: 15;
   font-weight: 400;
   font-size: 18px;
 }
 
-.menu__item-subitem ul {
-  background-color: #5a0010;
-  padding-top: 30px;
-  padding-left: 15px;
-  line-height: 2;
+.list-categories {
+  width: 524px;
+  background-color: #fff;
+  color: #1E1E1E;  
+  padding: 30px 12px 0 12px;
+  margin-top: 30px;
+  font-size: 15px;
+  font-weight: 500;
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  border-radius: 5px;
+  
+}
+.list-categories li {
+  margin: 0 18px;
+  height: 47px;
+  border-bottom: 1px solid #D9D9D9;  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*padding-right: 20px; */
+}
+.list-categories li span {
+  font-size: 30px;
+  
+}
+.list-categories-first {
+  border-right: 1px solid #D9D9D9;
 }
 
 .serv {
   position: relative;
 }
-
+.serv:hover {
+  transform: translateY(15px);
+}
 .serv:hover .menu__item-subitem {
   display: block;
 }
+/*.list-categories-first li:hover {
+  background: linear-gradient(125deg, #5A0010 14.93%, #E2243F 63.03%);
+  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+} */
 .contacts-block {
   display: none;
 }
@@ -612,8 +642,12 @@ html {
   margin-top: 109px;
   font-size: 18px;
   font-weight: 600;
-  border-radius: 7px;
+  background: rgba(217, 217, 217, 0.20);
+  border-radius: 5px;
   border: 2px solid #fff;
+}
+.bg__slide-btn:hover {
+  border-color: #5a0010; 
 }
 
 .bg__slide-btn:hover {
@@ -669,7 +703,9 @@ html {
 .bg__slide-img.three-slide img {
   height: 100%;
 }
-
+.bg__slide-box.slide-box__four {
+  margin-top: 130px;
+}
 .bg__slide-inner {
   max-width: 1145px;
   margin: 0 auto;
@@ -954,9 +990,18 @@ html {
   -webkit-transform: scale(1.02);
       -ms-transform: scale(1.02);
           transform: scale(1.02);
-  background: -o-linear-gradient(86deg, rgba(186, 0, 26, 0.77) 6.45%, rgba(24, 24, 24, 0) 68.02%);
-  background: linear-gradient(4deg, rgba(186, 0, 26, 0.77) 6.45%, rgba(24, 24, 24, 0) 68.02%);
+/*  background-image: -o-linear-gradient(86deg, rgba(186, 0, 26, 0.77) 6.45%, rgba(24, 24, 24, 0) 68.02%);
+  background-image: linear-gradient(4deg, rgba(186, 0, 26, 0.77) 6.45%, rgba(24, 24, 24, 0) 68.02%);  */
   position: relative;
+}
+.services__item-img:nth-child(2) {
+  display: none;
+}
+.services__item:hover .services__item-img:nth-child(1) {
+  display: none;
+}
+.services__item:hover .services__item-img:nth-child(2) {
+  display: block;
 }
 
 .services__item-inner {
@@ -1359,6 +1404,7 @@ html {
       -ms-transform: scale(1.02);
           transform: scale(1.02);
   border: 1.5px solid #BA001A;
+  transition: all ease-in-out 0.3s;
 }
 
 .blog__card:hover .blog__card-more {
@@ -1416,12 +1462,7 @@ html {
   color: #fff;  
   min-height: 500px;
 }
-/*.reviews__button-prev.swiper-button-prev  {
-  position: absolute;
-  bottom: 0;
 
-
-} */
 
 .reviews__title {
   margin-bottom: 37px;
@@ -1659,11 +1700,11 @@ html {
   font-size: 60px;
 }
 .tab__title:hover {
-  border-color: #BA001A;
+  border-color: #BA001A; 
   background: linear-gradient(125deg, #5A0010 14.93%, #E2243F 63.03%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
+  }
 .service-page__sidebar li + li {
   margin-top: 7px;
 }
@@ -2029,6 +2070,22 @@ html {
 }
 .gallery-button-next::after {
   color: #950015;
+}
+.swiper-horizontal > .swiper-pagination-bullets.bg-pagination {
+  bottom: 40px;
+}
+.social-items {
+  margin-top: 29px;
+  display: none;  
+  background-color: #1E1E1E;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  display: flex;
+
+}
+.social-items a {
+  display: block;
 }
 
 
@@ -2436,6 +2493,9 @@ html {
   .gallery-title {
     width: 250px;
     font-size: 30px;
+  }
+  .li____social-items {
+    display: block;
   }
 }
 
@@ -2891,6 +2951,9 @@ html {
   .item__title {
     font-size: 24px;
   }
+  .img-back{
+    padding-left: 170px;
+  }
 }
 
 @media (max-width: 450px) {
@@ -3042,7 +3105,7 @@ html {
 
   .menu.active {
     width: 300px;
-    height: 500px;
+    height: 650px;
     -webkit-transform: translateX(0%);
     -ms-transform: translateX(0%);
     transform: translateX(0%);
