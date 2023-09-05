@@ -22,6 +22,7 @@
 					<p class="header__contact-tel"><span class="icon-phone"></span> +38(098) 776 93 26</p>
 					<p class="header__contact-time"><span class="icon-time"></span> Пн.-Пт. з 8:00 до 18:00</p>
 				</div>
+				
 			</div>
 			<div class="header__box">
 				<div class="header__content">
@@ -36,21 +37,22 @@
 					<nav class="header__nav menu">
 						<ul class="menu__list">
 							<li class="menu__item item-menu__logo">Auto<span>Shield</span> <picture><source srcset="img/logo2.webp" type="image/webp"><img src="img/logo2.png" alt="логотип"></picture></li>
-							<li class="menu__item">
-								<a href="index.html" class="menu__link active-menu ">Про нас</a>
-
-							</li>
+							<li class="menu__item"><a href="index.html" class="menu__link active-menu ">Про нас</a></li>
 							<li class="menu__item  serv"><a href="index.html#services" class="menu__link">Послуги</a>
 								<div class="menu__item-subitem">
-									<ul>
-										<li>Кузовні роботи</li>
-										<li>Аквапрінт</li>
-										<li>Ремонт лобового скла </li>
-										<li>Полірування фар та подряпин</li>
-										<li>Фарбування автомобіля</li>
-										<li>Фарбування дисків</li>
-										<li>Антикорозійна обробка авто</li>
-									</ul>
+									<div class="list-categories">
+										<ul class="list-categories-first">
+											<li>Кузовні роботи <span class="icon-1"></span></li>
+											<li>Аквапрінт <span class="icon-print"></span></li>
+											<li>Ремонт лобового скла <span class="icon-2"></span></li>
+										</ul>
+										<ul class="list-categories-second">
+											<li>Полірування <span class="icon-poly"></span></li>
+											<li>Фарбування автомобіля <span class="icon-3"></span></li>
+											<li>Фарбування дисків <span class="icon-uniE90C"></span></li>
+										</ul>																							
+									</div>
+									
 								</div>
 							</li>
 							<li class="menu__item"><a href="index.html#blog" class="menu__link">Новини</a></li>
@@ -60,7 +62,14 @@
 								<p class="header__contact-map"><span class="icon-map"></span> Б.Церква, Вул. Київська, 90</p>								
 								<p class="header__contact-time"><span class="icon-time"></span> Пн.-Пт. з 8:00 до 18:00</p>	
 								<p class="header__contact-tel"><a href="tel:+380987769326"><span class="icon-phone"></span> +38(098) 776 93 26</a></p>							
+								<div class="footer__social-items social-items">								
+									<a href="https://instagram.com/autoshield_sto?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><span class="icon-insta"></span></a>
+									<a href="https://www.facebook.com/profile.php?id=61550329932715" target="_blank" id="social-icon"><span class="icon-facebook"></span></a>
+									<a href="#" target="_blank"><span class="icon-viber"></span></a>
+									<a href="https://web.telegram.org/" target="_blank"><span class="icon-telegr"></span></a>								
+								</div>
 							</li>
+							
 						</ul>
 					</nav>
 					<button class="header__btn btn"><span class="icon-phone2"> </span> Зателефонувати</button>
@@ -239,7 +248,8 @@
 						<div class="services__content">
 							<div class="services__items">
 								<div class="services__items-item services__item">
-									<picture><source srcset="img/services1.webp" type="image/webp"><img src="img/services1.png" alt="Кузовні роботи"></picture>
+									<img class="services__item-img" src="img/services1.webp" alt="Кузовні роботи">
+									<img class="services__item-img" src="img/services1-2.png" alt="Кузовні роботи">
 									<div class="services__item-inner">
 										<picture><source srcset="img/service_wrench.webp" type="image/webp"><img src="img/service_wrench.png" alt=""></picture>
 										<h4>Кузовні роботи</h4>
@@ -247,7 +257,8 @@
 									</div>
 								</div>
 								<div class="services__items-item services__item">
-									<picture><source srcset="img/services2.webp" type="image/webp"><img src="img/services2.png" alt="Аквапрінт"></picture>
+									<img class="services__item-img" src="img/services2.webp" alt="Аквапрінт">
+									<img class="services__item-img" src="img/services2-2.png" alt="Аквапрінт">
 									<div class="services__item-inner">
 										<picture><source srcset="img/service_wrench.webp" type="image/webp"><img src="img/service_wrench.png" alt=""></picture>
 										<h4>Аквапрінт</h4>
@@ -255,7 +266,8 @@
 									</div>
 								</div>
 								<div class="services__items-item services__item">
-									<picture><source srcset="img/services3.webp" type="image/webp"><img src="img/services3.png" alt="Аквапрінт"></picture>
+									<img class="services__item-img" src="img/services3.webp" alt="Ремонт лобового скла">
+									<img class="services__item-img" src="img/services3-2.png" alt="Ремонт лобового скла">
 									<div class="services__item-inner">
 										<picture><source srcset="img/service_wrench.webp" type="image/webp"><img src="img/service_wrench.png" alt="Аквапрінт"></picture>
 										<h4>Ремонт лобового скла</h4>
@@ -263,7 +275,8 @@
 									</div>
 								</div>
 								<div class="services__items-item services__item">
-									<picture><source srcset="img/services5.webp" type="image/webp"><img src="img/services5.png" alt="Полірування"></picture>
+									<img class="services__item-img" src="img/services5.webp" alt="Полірування">
+									<img class="services__item-img" src="img/services5-2.png" alt="Полірування">
 									<div class="services__item-inner">
 										<picture><source srcset="img/service_wrench.webp" type="image/webp"><img src="img/service_wrench.png" alt="Полірування"></picture>
 										<h4>Полірування фар та подряпин</h4>
@@ -271,7 +284,8 @@
 									</div>
 								</div>
 								<div class="services__items-item services__item">
-									<picture><source srcset="img/services6.webp" type="image/webp"><img src="img/services6.png" alt="Фарбування автомобіля "></picture>
+									<img class="services__item-img" src="img/services6.webp" alt="Фарбування автомобіля ">
+									<img class="services__item-img" src="img/services6-2.png" alt="Фарбування автомобіля ">
 									<div class="services__item-inner">
 										<picture><source srcset="img/service_wrench.webp" type="image/webp"><img src="img/service_wrench.png" alt="Фарбування автомобіля "></picture>
 										<h4>Фарбування автомобіля </h4>
@@ -279,7 +293,8 @@
 									</div>
 								</div>
 								<div class="services__items-item services__item">
-									<picture><source srcset="img/services7.webp" type="image/webp"><img src="img/services7.png" alt="Фарбування дисків "></picture>
+									<img class="services__item-img" src="img/services7.webp" alt="Фарбування дисків ">
+									<img class="services__item-img" src="img/services7-2.png" alt="Фарбування дисків">
 									<div class="services__item-inner">
 										<picture><source srcset="img/service_wrench.webp" type="image/webp"><img src="img/service_wrench.png" alt="Фарбування дисків "></picture>
 										<h4>Фарбування дисків </h4>
@@ -438,7 +453,7 @@
 						</div>
 						<div class="blog__cards">
 							<div class="blog__cards-card blog__card">
-								<div class="blog__card-img"><picture><source srcset="img/blog-main1.webp" type="image/webp"><img src="img/blog-main1.png" alt="блог"></picture></div>
+								<div class="blog__card-img"><img src="img/blog-main1.png" alt="блог"></div>
 								<div class="blog__card-text"><picture><source srcset="img/eye.webp" type="image/webp"><img src="img/eye.png" alt="око"></picture>233 2 хв</div>
 								<h4 class="blog__card-title">Фарбування коброю </h4>
 								<div class="blog__card-info">
@@ -456,7 +471,7 @@
 								</div>
 							</div>
 							<div class="blog__cards-card blog__card">
-								<div class="blog__card-img"><picture><source srcset="img/blog-main3.webp" type="image/webp"><img src="img/blog-main3.png" alt="блог"></picture></div>
+								<div class="blog__card-img"><img src="img/blog-main3.png" alt="блог"></div>
 								<div class="blog__card-text"><picture><source srcset="img/eye.webp" type="image/webp"><img src="img/eye.png" alt="око"></picture>233 2 хв</div>
 								<h4 class="blog__card-title">Видалення вм'ятин без фарбування </h4>
 								<div class="blog__card-info">
@@ -621,8 +636,8 @@
 					<div class="footer__social">
 						<h3 class="footer__social-title">Ми у соц. мережах</h3>
 						<div class="footer__social-items">
-							<a href="https://www.instagram.com/" target="_blank"><span class="icon-insta"></span></a>
-							<a href="https://facebook.com" target="_blank" id="social-icon"><span class="icon-facebook"></span></a>
+							<a href="https://instagram.com/autoshield_sto?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><span class="icon-insta"></span></a>
+							<a href="https://www.facebook.com/profile.php?id=61550329932715" target="_blank" id="social-icon"><span class="icon-facebook"></span></a>
 							<a href="#" target="_blank"><span class="icon-viber"></span></a>
 							<a href="https://web.telegram.org/" target="_blank"><span class="icon-telegr"></span></a>
 						</div>
