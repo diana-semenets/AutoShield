@@ -433,7 +433,8 @@ html {
   display: grid;
   grid-template-columns: 1fr 1fr; 
   border-radius: 5px;
-  
+  position: relative;
+  z-index: 15;
 }
 .list-categories li {
   margin: 0 18px;
@@ -451,22 +452,26 @@ html {
 .list-categories-first {
   border-right: 1px solid #D9D9D9;
 }
-
+.list-categories-first a:hover {
+  background: linear-gradient(125deg, #5A0010 14.93%, #E2243F 63.03%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.list-categories-second a:hover {
+  background: linear-gradient(125deg, #5A0010 14.93%, #E2243F 63.03%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .serv {
   position: relative;
 }
 .serv:hover {
-  transform: translateY(15px);
+  margin-top: 15px; 
 }
 .serv:hover .menu__item-subitem {
   display: block;
 }
-/*.list-categories-first li:hover {
-  background: linear-gradient(125deg, #5A0010 14.93%, #E2243F 63.03%);
-  
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; 
-} */
+
 .contacts-block {
   display: none;
 }
