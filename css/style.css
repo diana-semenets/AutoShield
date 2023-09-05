@@ -452,12 +452,22 @@ html {
 .list-categories-first {
   border-right: 1px solid #D9D9D9;
 }
-.list-categories-first a:hover {
+/*.list-categories-first a:hover {
   background: linear-gradient(125deg, #5A0010 14.93%, #E2243F 63.03%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .list-categories-second a:hover {
+  background: linear-gradient(125deg, #5A0010 14.93%, #E2243F 63.03%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */
+.list-categories-second li:hover {
+  background: linear-gradient(125deg, #5A0010 14.93%, #E2243F 63.03%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.list-categories-first li:hover {
   background: linear-gradient(125deg, #5A0010 14.93%, #E2243F 63.03%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
