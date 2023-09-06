@@ -2519,6 +2519,15 @@ html {
   .li____social-items {
     display: block;
   }
+  .list-categories {
+    grid-template-columns: 1fr;
+  }
+  .menu .menu__item-subitem .list-categories-first li, .menu .menu__item-subitem .list-categories-second li {
+   max-width: 250px;
+    margin-left: -50px;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 @media (max-width: 500px) {  
