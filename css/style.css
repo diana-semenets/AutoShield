@@ -2822,7 +2822,7 @@ html {
     flex-wrap: wrap-reverse;
   }
   .first__slide-btn {
-    margin-bottom: 40px;
+    margin: 20px 0;
   }
   .second-slide__btn {
     margin-top: 60px;
@@ -2883,7 +2883,7 @@ html {
     padding-right: 20px;
   }
   .four-slide__btn {
-    margin-bottom: 40px;
+    margin:20px 0 40px;
     background-color:  #BA001A;
     color: #fff;
   }
@@ -2923,7 +2923,7 @@ html {
     padding-right: 0;
   }
   .seven-content {
-    padding: 57px 36px 0;
+    padding: 57px 15px 0;
   }
   .btn-seven {
     margin-top: 75px;
@@ -2943,6 +2943,9 @@ html {
   }
   .six-content {
     margin-top: 0;
+  }
+  .six__slide-text {
+    margin: 13px 0 10px;
   }
   .bg__slide-seven {
     height: 600px;
